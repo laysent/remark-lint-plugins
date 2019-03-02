@@ -1,0 +1,17 @@
+{
+  "command": {
+    "create": {
+      "license": "MIT"
+    },
+    "version": {
+      "message": "chore(release): publish %s"
+    }
+  },
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent",
+  "npmClient": "yarn",
+  "registry": "https://registry.npm.taobao.org",
+  "useWorkspaces": true
+}
