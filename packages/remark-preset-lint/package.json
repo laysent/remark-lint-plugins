@@ -1,6 +1,6 @@
 {
   "name": "@laysent/remark-preset-lint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "preset of remark lint rules",
   "license": "MIT",
   "keywords": [
@@ -42,7 +42,7 @@
     "remark-lint-list-item-content-indent": "^1.0.2",
     "remark-lint-list-item-indent": "^1.0.3",
     "remark-lint-list-item-spacing": "^1.1.2",
-    "remark-lint-match-punctuation": "^0.1.0",
+    "remark-lint-match-punctuation": "^0.1.1",
     "remark-lint-maximum-heading-length": "^1.0.2",
     "remark-lint-no-auto-link-without-protocol": "^1.0.2",
     "remark-lint-no-blockquote-without-marker": "^2.0.2",
@@ -75,8 +75,8 @@
     "remark-lint-ordered-list-marker-style": "^1.0.2",
     "remark-lint-ordered-list-marker-value": "^1.0.2",
     "remark-lint-rule-style": "^1.0.2",
-    "remark-lint-spaces-around-number": "^0.1.0",
-    "remark-lint-spaces-around-word": "^0.1.0",
+    "remark-lint-spaces-around-number": "^0.1.1",
+    "remark-lint-spaces-around-word": "^0.1.1",
     "remark-lint-strong-marker": "^1.0.2",
     "remark-lint-table-cell-padding": "^1.0.3",
     "remark-lint-table-pipe-alignment": "^1.0.2",

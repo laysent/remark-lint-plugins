@@ -1,6 +1,6 @@
 {
   "name": "remark-lint-spaces-around-word",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "LaySent <laysent@gmail.com>",
   "bugs": {
     "url": "https://github.com/laysent/remark-lint-plugins/issues"
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "unified-lint-rule": "^1.0.3",
-    "unist-util-to-list-of-char": "^0.1.0"
+    "unist-util-to-list-of-char": "^0.1.1"
   },
   "devDependencies": {
     "eslint": "5.3.0",
