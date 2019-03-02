@@ -1,0 +1,37 @@
+{
+  "name": "unist-util-to-list-of-char",
+  "version": "0.1.0",
+  "author": "LaySent <laysent@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/laysent/remark-lint-plugins/issues"
+  },
+  "homepage": "https://github.com/laysent/remark-lint-plugins",
+  "description": "functionality that helps generating list of characters in all visible text inside give node tree",
+  "keywords": [
+    "unist",
+    "remark",
+    "helper",
+    "util"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laysent/remark-lint-plugins.git"
+  },
+  "dependencies": {
+    "unist-util-visit": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^24.1.0",
+    "remark": "^10.0.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint *.js",
+    "prepublish": "npm run lint && npm run lint"
+  }
+}
