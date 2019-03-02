@@ -12,6 +12,5 @@
   ],
   "version": "independent",
   "npmClient": "yarn",
-  "registry": "https://registry.npm.taobao.org",
   "useWorkspaces": true
 }
