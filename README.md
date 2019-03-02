@@ -8,3 +8,5 @@ This monorepo contains remark-lint plugins that helps linting markdown documents
   - Ensures there ara spaces around number and Chinese
 + [`remark-lint-spaces-around-word`](https://github.com/laysent/remark-lint-plugins/tree/master/packages/remark-lint-spaces-around-word)
   - Ensures there ara spaces around English word and Chinese
++ [`remark-preset-lint`](https://github.com/laysent/remark-lint-plugins/tree/master/packages/remark-preset-lint)
+  - Preset of configured rules for remark-lint
