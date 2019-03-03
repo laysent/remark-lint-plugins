@@ -2,10 +2,6 @@ const rule = require('unified-lint-rule');
 const toList = require('unist-util-to-list-of-char');
 
 const pairs = [
-  '()',
-  '<>',
-  '{}',
-  '[]',
   '“”',
   '『』',
   '（）',
@@ -41,8 +37,8 @@ class Validator {
   }
 }
 
-function processor(tree, file) {
-  const processors = pairs.map(pair => new Validator(pair, file));
+function processor(tree, file, config = pairs) {
+  const processors = config.map(pair => new Validator(pair, file));
   toList(tree, (list) => {
     list.forEach((node) => {
       processors.forEach((p) => {

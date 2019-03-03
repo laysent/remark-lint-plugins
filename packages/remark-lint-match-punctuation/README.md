@@ -7,7 +7,23 @@ Only punctuations with left/right difference will be included to check, such as 
 marks, parenthesis, angle quotes, etc. Currently, plugin will check the usage of following
 punctuation:
 
-`()`, `<>`, `{}`, `[]`, `“”`, `『』`, `（）`, `《》`, `「」`, `【】`, `‘’`
+`“”`, `『』`, `（）`, `《》`, `「」`, `【】`, `‘’`
+
+## Option
+
+If you would like to override the default punctuation check list above, you can
+pass a list of pairs as configuration. It should be a list of string, with first
+character representing the left punctuation and second character representing
+it's right pair.
+
+For example:
+
+```javascript
+[require('remark-lint-match-punctuation'), ['（）']]
+```
+
+This will override the default behavior and only warn when `（）` has any
+mismatch.
 
 ## Example
 
@@ -77,7 +93,7 @@ Or use this on the API:
 
  remark()
    .use(require('remark-lint'))
-+  .use(require('remark-lint-match-punctuation'))
++  .use(require('remark-lint-match-punctuation')[, options])
    .process('_Emphasis_ and **importance**', function (err, file) {
      console.error(report(err || file));
    });

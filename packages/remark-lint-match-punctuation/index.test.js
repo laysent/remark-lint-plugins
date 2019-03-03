@@ -3,10 +3,10 @@ const vfile = require('to-vfile');
 const rule = require('.');
 
 describe('match-punctuation', () => {
-  function process(markdown) {
+  function process(markdown, options) {
     return new Promise((resolve, reject) => {
       remark()
-        .use(rule)
+        .use(rule, options)
         .process(vfile({ path: 'input.md', contents: markdown }), (error, file) => {
           if (error) reject(error);
           else resolve(file.messages.map(String));
@@ -14,10 +14,6 @@ describe('match-punctuation', () => {
     });
   }
   const pairs = [
-    '()',
-    '<>',
-    '{}',
-    '[]',
     '“”',
     '『』',
     '（）',
@@ -61,6 +57,13 @@ describe('match-punctuation', () => {
           `input.md:1:15: "${left}" is used without matching "${right}"`,
         ]);
       });
+    });
+  });
+  it('should check pairs based on configuration', () => {
+    const markdown = '检查（）但是不检查《';
+    const options = ['（）'];
+    return process(markdown, options).then((messages) => {
+      expect(messages).toEqual([]);
     });
   });
 });
