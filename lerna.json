@@ -2,9 +2,6 @@
   "command": {
     "create": {
       "license": "MIT"
-    },
-    "version": {
-      "message": "chore(release): publish %s"
     }
   },
   "packages": [
