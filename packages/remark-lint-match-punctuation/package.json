@@ -1,6 +1,6 @@
 {
   "name": "remark-lint-match-punctuation",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "LaySent <laysent@gmail.com>",
   "bugs": {
     "url": "https://github.com/laysent/remark-lint-plugins/issues"
