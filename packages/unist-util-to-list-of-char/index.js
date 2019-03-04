@@ -41,7 +41,11 @@ function toList(root, _test, _callback) {
     callback(list);
   }
 
-  visit(root, test, getTree);
+  if (typeof _test === 'function') {
+    getTree(root);
+  } else {
+    visit(root, test, getTree);
+  }
 }
 
 module.exports = toList;
