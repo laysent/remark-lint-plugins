@@ -1,0 +1,40 @@
+{
+  "name": "remark-lint-no-chinese-punctuation-in-number",
+  "private": true,
+  "version": "0.0.0",
+  "author": "LaySent <laysent@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/laysent/remark-lint-no-repeat-punctuation/issues"
+  },
+  "homepage": "https://github.com/laysent/remark-lint-no-repeat-punctuation",
+  "description": "remark lint plugin that ...",
+  "keywords": [
+    "remark",
+    "remark-lint",
+    "lint",
+    "rule"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laysent/remark-lint-no-repeat-punctuation.git"
+  },
+  "dependencies": {
+    "unified-lint-rule": "^1.0.3",
+    "unist-util-visit": "^1.4.0",
+    "unist-util-to-string-with-nodes": "^0.0.0"
+  },
+  "devDependencies": {
+    "eslint": "5.3.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^24.1.0",
+    "remark": "^10.0.1",
+    "to-vfile": "^5.0.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint *.js"
+  }
+}

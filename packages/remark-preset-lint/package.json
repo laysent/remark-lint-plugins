@@ -46,6 +46,7 @@
     "remark-lint-maximum-heading-length": "^1.0.2",
     "remark-lint-no-auto-link-without-protocol": "^1.0.2",
     "remark-lint-no-blockquote-without-marker": "^2.0.2",
+    "remark-lint-no-chinese-punctuation-in-number": "^0.0.0",
     "remark-lint-no-consecutive-blank-lines": "^1.0.2",
     "remark-lint-no-duplicate-definitions": "^1.0.3",
     "remark-lint-no-duplicate-headings-in-section": "^1.0.2",

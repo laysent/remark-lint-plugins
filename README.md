@@ -10,3 +10,5 @@ This monorepo contains remark-lint plugins that helps linting markdown documents
   - Ensures there ara spaces around English word and Chinese
 + [`remark-preset-lint`](https://github.com/laysent/remark-lint-plugins/tree/master/packages/remark-preset-lint)
   - Preset of configured rules for remark-lint
++ [`remark-lint-no-chinese-punctuation-in-number`](https://github.com/laysent/remark-lint-plugins/tree/master/packages/remark-lint-no-chinese-punctuation-in-number)
+  - Ensures that Chinese punctuation will not be used in number, such as 1，000 or 12：34
