@@ -1,12 +1,11 @@
 {
   "name": "remark-lint-no-chinese-punctuation-in-number",
-  "private": true,
   "version": "0.1.0",
   "author": "LaySent <laysent@gmail.com>",
   "bugs": {
-    "url": "https://github.com/laysent/remark-lint-no-repeat-punctuation/issues"
+    "url": "https://github.com/laysent/remark-lint-plugins/issues"
   },
-  "homepage": "https://github.com/laysent/remark-lint-no-repeat-punctuation",
+  "homepage": "https://github.com/laysent/remark-lint-plugins",
   "description": "remark lint plugin that ...",
   "keywords": [
     "remark",
@@ -18,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/laysent/remark-lint-no-repeat-punctuation.git"
+    "url": "git+https://github.com/laysent/remark-lint-plugins.git"
   },
   "dependencies": {
     "unified-lint-rule": "^1.0.3",
