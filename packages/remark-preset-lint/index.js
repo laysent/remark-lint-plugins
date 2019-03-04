@@ -64,5 +64,6 @@ module.exports.plugins = [
   require('remark-lint-match-punctuation'),
   require('remark-lint-spaces-around-number'),
   require('remark-lint-spaces-around-word'),
+  require('remark-lint-no-repeat-punctuation'),
   require('remark-lint-no-chinese-punctuation-in-number'),
 ];
