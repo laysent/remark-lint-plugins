@@ -1,7 +1,7 @@
 {
   "name": "remark-lint-no-chinese-punctuation-in-number",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "LaySent <laysent@gmail.com>",
   "bugs": {
     "url": "https://github.com/laysent/remark-lint-no-repeat-punctuation/issues"
@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "unified-lint-rule": "^1.0.3",
-    "unist-util-visit": "^1.4.0",
-    "unist-util-to-string-with-nodes": "^0.0.0"
+    "unist-util-to-string-with-nodes": "^0.1.0",
+    "unist-util-visit": "^1.4.0"
   },
   "devDependencies": {
     "eslint": "5.3.0",
