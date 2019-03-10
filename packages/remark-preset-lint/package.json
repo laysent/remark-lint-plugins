@@ -1,6 +1,6 @@
 {
   "name": "@laysent/remark-preset-lint",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "preset of remark lint rules",
   "license": "MIT",
   "keywords": [
