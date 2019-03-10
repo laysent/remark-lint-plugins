@@ -6,7 +6,7 @@
     "url": "https://github.com/laysent/remark-lint-plugins/issues"
   },
   "homepage": "https://github.com/laysent/remark-lint-plugins",
-  "description": "remark lint plugin that ...",
+  "description": "remark lint plugin that will warn when multiple punctuations found in series.",
   "keywords": [
     "remark",
     "remark-lint",
