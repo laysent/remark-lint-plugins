@@ -14,3 +14,5 @@ This monorepo contains remark-lint plugins that helps linting markdown documents
   — Ensures that Chinese punctuation will not be used in number, such as 1，000 or 12：34
 + [`remark-lint-no-repeat-punctuation`](https://github.com/laysent/remark-lint-plugins/tree/master/packages/remark-lint-no-repeat-punctuation)
   — Ensures that punctuation will be used multiple times, such as `"！！！"` or `"？？？"`
++ [`remark-lint-no-long-code`](https://github.com/laysent/remark-lint-plugins/tree/master/packages/remark-lint-no-long-code)
+  — Ensures that each line in code block won't be too long
