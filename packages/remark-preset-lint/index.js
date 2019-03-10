@@ -66,9 +66,9 @@ module.exports.plugins = [
   require('remark-lint-spaces-around-word'),
   require('remark-lint-no-repeat-punctuation'),
   require('remark-lint-no-chinese-punctuation-in-number'),
-  require('remark-lint-no-long-code', {
+  [require('remark-lint-no-long-code'), {
     tabSize: 2,
     length: 80,
     exclude: ['dot', 'smali'],
-  }),
+  }],
 ];
