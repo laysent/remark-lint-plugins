@@ -2,6 +2,9 @@
   "command": {
     "create": {
       "license": "MIT"
+    },
+    "publish": {
+      "message": "chore: publish"
     }
   },
   "packages": [
