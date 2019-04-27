@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "unified-lint-rule": "^1.0.3",
+    "unist-util-remove": "^1.0.1",
     "unist-util-to-list-of-char": "^0.1.2"
   },
   "devDependencies": {

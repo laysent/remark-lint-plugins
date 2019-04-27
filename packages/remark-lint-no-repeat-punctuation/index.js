@@ -1,4 +1,5 @@
 const rule = require('unified-lint-rule');
+const remove = require('unist-util-remove');
 const toList = require('unist-util-to-list-of-char');
 
 const punctuations = '！!~～.。,，·?？';
@@ -29,8 +30,9 @@ function processor(tree, file, config = punctuations) {
     });
     traveler.end();
   }
-  toList(tree, 'paragraph', callback);
-  toList(tree, 'heading', callback);
+  const withoutCode = remove(tree, 'inlineCode');
+  toList(withoutCode, 'paragraph', callback);
+  toList(withoutCode, 'heading', callback);
 }
 
 module.exports = rule(

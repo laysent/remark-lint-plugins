@@ -39,4 +39,13 @@ describe('no-repeat-punctuation', () => {
       ]);
     });
   });
+  it('should not handle text inside inline code', () => {
+    const markdown = 'correct: `../` wrong: ...';
+    return process(markdown).then((messages) => {
+      expect(messages).toEqual([
+        'input.md:1:24: Should not repeat "."',
+        'input.md:1:25: Should not repeat "."',
+      ]);
+    });
+  });
 });
