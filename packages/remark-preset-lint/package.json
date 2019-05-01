@@ -1,6 +1,6 @@
 {
   "name": "@laysent/remark-preset-lint",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "preset of remark lint rules",
   "license": "MIT",
   "keywords": [
@@ -67,7 +67,7 @@
     "remark-lint-no-multiple-toplevel-headings": "^1.0.2",
     "remark-lint-no-paragraph-content-indent": "^1.0.5",
     "remark-lint-no-reference-like-url": "^1.0.3",
-    "remark-lint-no-repeat-punctuation": "^0.1.1",
+    "remark-lint-no-repeat-punctuation": "^0.1.2",
     "remark-lint-no-shell-dollars": "^1.0.2",
     "remark-lint-no-shortcut-reference-image": "^1.0.2",
     "remark-lint-no-shortcut-reference-link": "^1.0.3",
