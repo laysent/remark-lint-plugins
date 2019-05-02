@@ -48,4 +48,16 @@ describe('no-repeat-punctuation', () => {
       ]);
     });
   });
+  it('should handle series of inline blocks with punctuation inside correctly', () => {
+    const markdown = [
+      'HTML 的标签有：`div`，`span`，`img`，`a` 等。',
+      'HTML 的标签还有：`main`，`article`，`aside`，`footer` 等。。。',
+    ].join('\n');
+    return process(markdown).then((messages) => {
+      expect(messages).toEqual([
+        'input.md:2:48: Should not repeat "。"',
+        'input.md:2:49: Should not repeat "。"',
+      ]);
+    });
+  });
 });

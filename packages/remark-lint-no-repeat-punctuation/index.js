@@ -1,5 +1,5 @@
 const rule = require('unified-lint-rule');
-const remove = require('unist-util-remove');
+const map = require('unist-util-map');
 const toList = require('unist-util-to-list-of-char');
 
 const punctuations = '！!~～.。,，·?？';
@@ -30,9 +30,16 @@ function processor(tree, file, config = punctuations) {
     });
     traveler.end();
   }
-  const withoutCode = remove(tree, 'inlineCode');
-  toList(withoutCode, 'paragraph', callback);
-  toList(withoutCode, 'heading', callback);
+  const inlineCodeReplaced = map(tree, (node) => {
+    if (node.type !== 'inlineCode') return node;
+    /**
+     * Change the value of code, so that lint rule won't throw error for anything inside.
+     * However, don't change the position info, so that warning still shows the correct position.
+     */
+    return Object.assign({}, node, { value: '\u200b' });
+  });
+  toList(inlineCodeReplaced, 'paragraph', callback);
+  toList(inlineCodeReplaced, 'heading', callback);
 }
 
 module.exports = rule(
