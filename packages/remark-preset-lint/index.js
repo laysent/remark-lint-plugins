@@ -69,6 +69,6 @@ module.exports.plugins = [
   [require('remark-lint-no-long-code'), {
     tabSize: 2,
     length: 80,
-    exclude: ['dot', 'smali'],
+    exclude: ['dot', 'smali', 'text'],
   }],
 ];
