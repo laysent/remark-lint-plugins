@@ -58,7 +58,6 @@ module.exports.plugins = [
   [require('remark-lint-rule-style'), '---'],
   [require('remark-lint-strong-marker'), '*'],
   [require('remark-lint-table-cell-padding'), 'padded'],
-  require('remark-lint-table-pipe-alignment'),
   require('remark-lint-table-pipes'),
   [require('remark-lint-unordered-list-marker-style'), '+'],
   require('remark-lint-match-punctuation'),
