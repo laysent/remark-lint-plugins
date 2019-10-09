@@ -1,6 +1,6 @@
 {
   "name": "remark-lint-no-long-code",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "laysent <laysent@gmail.com>",
   "bugs": {
     "url": "https://github.com/laysent/remark-lint-plugins/issues"
