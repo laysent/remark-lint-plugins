@@ -81,7 +81,7 @@ You probably want to use it on the CLI through a config file:
    "plugins": [
      ...
      "remark-lint",
-+    ["remark-lint-no-long-code", { length: 100 }]
++    ["remark-lint-no-long-code", { "length": 100 }]
      ...
    ]
  }
