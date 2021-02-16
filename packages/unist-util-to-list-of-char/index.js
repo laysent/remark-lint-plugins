@@ -1,4 +1,5 @@
 const visit = require('unist-util-visit');
+const generated = require('unist-util-generated');
 
 function valueOf(node) {
   if (!node) return null;
@@ -16,6 +17,7 @@ function toList(root, _test, _callback) {
   function getTree(tree) {
     const list = [];
     function visitor(node) {
+      if (generated(node)) return;
       const value = valueOf(node);
       if (typeof value !== 'string') return;
       const { line, column, offset } = node.position.start;

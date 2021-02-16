@@ -20,6 +20,7 @@
     "url": "git+https://github.com/laysent/remark-lint-plugins.git"
   },
   "dependencies": {
+    "unist-util-generated": "^1.1.6",
     "unist-util-visit": "^1.4.0"
   },
   "devDependencies": {
