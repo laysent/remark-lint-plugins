@@ -1,6 +1,6 @@
 {
   "name": "unist-util-to-list-of-char",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "LaySent <laysent@gmail.com>",
   "bugs": {
     "url": "https://github.com/laysent/remark-lint-plugins/issues"
